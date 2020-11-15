@@ -278,6 +278,7 @@ section.info {
   h2 {
     width: 90px;
     font-size: 0.6rem;
+    margin-bottom: 0.5rem;
   }
 
   h3 {
@@ -295,7 +296,7 @@ section.info {
   .langs {
     grid-template-columns: 90px auto;
     grid-gap: 20px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 0.5rem;
   }
 
