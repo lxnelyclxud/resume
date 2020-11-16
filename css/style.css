@@ -243,9 +243,7 @@ section.info {
   }
 
   .links li {
-    display: block;
-    padding-bottom: 5px;
-    text-align: center;
+    padding: 0 3px;
   }
 
   .tech ul li,
@@ -310,7 +308,7 @@ section.info {
 
   .links li {
     display: block;
-    padding: 2px 0;
+    padding: 1px 0;
     font-size: 0.5rem;
     text-align: center;
   }
@@ -347,12 +345,3 @@ section.info {
     min-width: 75px;
   }
 }
-
-/* @media (max-width: 500px) {
-  :root {
-    --wrapper-width: 100vw;
-    --paper-width: 85vw;
-    --paper-top-height: 6vh;
-    --paper-height: auto;
-  }
-} ; */
