@@ -1,17 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 :root {
   --wrapper-width: 969px;
   --paper-width: 830px;
   --paper-top-height: 126px;
-  --paper-height: calc(297mm - 55px);
 }
 
 * {
   margin: 0;
   padding: 0;
   color: #070626;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -106,7 +105,7 @@ h3 {
 
 #paper-mid {
   display: block;
-  height: var(--paper-height);
+  height: auto;
   background-image: url(../img/pmid.jpg);
   background-repeat: repeat-y;
   overflow: hidden;
@@ -134,11 +133,7 @@ h3 {
   color: #4a76a8;
 }
 
-section.info,
-section.education ul li,
-section.experience ul li,
-.tech,
-.langs {
+.entry {
   display: grid;
   grid-template-columns: 170px auto;
   grid-gap: 50px;
@@ -213,13 +208,6 @@ section.info {
 }
 
 @media (max-width: 960px) {
-  /* :root {
-    --wrapper-width: 740px;
-    --paper-width: 628px;
-    --paper-top-height: 95px;
-    --paper-height: calc(297mm - 45px);
-  } */
-
   :root {
     --wrapper-width: 100vw;
     --paper-width: 85vw;
@@ -253,17 +241,6 @@ section.info {
 }
 
 @media (max-width: 700px) {
-  /* :root {
-    --wrapper-width: 340px;
-    --paper-width: 290px;
-    --paper-top-height: 44px;
-    --paper-height: auto;
-  } */
-
-  /* .wrapper-top {
-    height: 12px;
-  } */
-
   .wrapper-mid {
     padding-bottom: 10px;
   }
@@ -287,11 +264,7 @@ section.info {
     margin: 20px;
   }
 
-  section.info,
-  section.education ul li,
-  section.experience ul li,
-  .tech,
-  .langs {
+  .entry {
     grid-template-columns: 90px auto;
     grid-gap: 20px;
     margin-bottom: 1rem;
